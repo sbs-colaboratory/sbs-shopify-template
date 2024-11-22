@@ -1,0 +1,12 @@
+{
+    "sections": {
+        "category": {
+            "type": "category"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "category"
+    ]
+}
