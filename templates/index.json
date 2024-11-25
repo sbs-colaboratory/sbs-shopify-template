@@ -1,20 +1,44 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "hero": {
-            "type": "hero"
-        },
-        "category": {
-            "type": "category"
-        },
-        "callout": {
-            "type": "callout"
-        }
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "text_headline": "Skin Bar Shop",
+        "url_button_link": "",
+        "text_button_text": "Staff Picks",
+        "image_hero": "shopify://shop_images/colorescience-total-eye-hero.jpg"
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "hero",
-        "category",
-        "callout"
-    ]
+    "category": {
+      "type": "category",
+      "settings": {
+        "text_headline": "Staff Picks",
+        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "collection_collection": "kerstin-florian",
+        "collection_collection_limit": 6
+      }
+    },
+    "callout": {
+      "type": "callout",
+      "settings": {
+        "text_headline": "Save on Your First Visit"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "hero",
+    "category",
+    "callout"
+  ]
 }
