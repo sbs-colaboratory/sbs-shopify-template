@@ -1,0 +1,32 @@
+{
+    "sections": {
+        "hero": {
+            "type": "hero"
+        },
+        "staff_picks": {
+            "type": "staff_picks"
+        },
+        "collection_1": {
+            "type": "collection_1"
+        },
+        "collection_2": {
+            "type": "collection_2"
+        },
+        "collection_3": {
+            "type": "collection_3"
+        },
+        "collection_4": {
+            "type": "collection_4"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "hero",
+        "staff_picks",
+        "collection_1",
+        "collection_2",
+        "collection_3",
+        "collection_4"
+    ]
+}
