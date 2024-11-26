@@ -1,0 +1,32 @@
+{
+    "sections": {
+        "hero": {
+            "type": "hero"
+        },
+        "staff_picks": {
+            "type": "staff_picks"
+        },
+        "colorescience": {
+            "type": "colorescience"
+        },
+        "kerstin_florian": {
+            "type": "kerstin_florian"
+        },
+        "elizabethw": {
+            "type": "elizabethw"
+        },
+        "rescuemd": {
+            "type": "rescuemd"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "hero",
+        "staff_picks",
+        "colorescience",
+        "kerstin_florian",
+        "elizabethw",
+        "rescuemd"
+    ]
+}
