@@ -47,8 +47,8 @@
       "settings": {
         "text_headline": "Colorescience",
         "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
-        "collection_collection": "",
-        "collection_collection_limit": 6
+        "collection_collection": "colorescience",
+        "collection_collection_limit": 10
       }
     },
     "elizabethw": {
