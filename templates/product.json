@@ -17,7 +17,7 @@
       "type": "product_recommended",
       "settings": {
         "text_headline": "Recommended",
-        "collection_collection": "staff-picks",
+        "collection_collection": "staff-favorites",
         "collection_collection_limit": 6
       }
     }
