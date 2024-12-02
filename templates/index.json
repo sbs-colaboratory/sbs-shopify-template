@@ -20,8 +20,8 @@
       "settings": {
         "text_headline": "StafF Picks",
         "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
-        "collection_collection": "",
-        "collection_collection_limit": 6
+        "collection_collection": "staff-picks",
+        "collection_collection_limit": 4
       }
     },
     "new_clients": {
