@@ -15,7 +15,11 @@
     },
     "product_recommended": {
       "type": "product_recommended",
-      "settings": {}
+      "settings": {
+        "text_headline": "Recommended",
+        "collection_collection": "staff-picks",
+        "collection_collection_limit": 6
+      }
     }
   },
   "layout": "product",
