@@ -28,17 +28,17 @@
       "type": "kerstin_florian",
       "settings": {
         "text_headline": "Kerstin Florian",
-        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
-        "collection_collection": "",
-        "collection_collection_limit": 6
+        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
+        "collection_collection": "kerstin-florian",
+        "collection_collection_limit": 14
       }
     },
     "rescuemd": {
       "type": "rescuemd",
       "settings": {
         "text_headline": "Rescuemd",
-        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
-        "collection_collection": "",
+        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
+        "collection_collection": "rescuemd",
         "collection_collection_limit": 6
       }
     },
@@ -46,18 +46,18 @@
       "type": "colorescience",
       "settings": {
         "text_headline": "Colorescience",
-        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
         "collection_collection": "colorescience",
-        "collection_collection_limit": 6
+        "collection_collection_limit": 14
       }
     },
     "elizabethw": {
       "type": "elizabethw",
       "settings": {
         "text_headline": "ElizabethW",
-        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
-        "collection_collection": "",
-        "collection_collection_limit": 6
+        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
+        "collection_collection": "elizabethw",
+        "collection_collection_limit": 14
       }
     }
   },
