@@ -35,7 +35,6 @@
   --base-color-moss--moss-800: #292723;
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
-  --link-color--link-alternate: var(--base-color-neutral--white);
   --base-color-moss--moss-900: #141311;
   --base-color-brand--blue-light: #d9e5ff;
   --base-color-brand--blue: #2d62ff;
@@ -65,6 +64,7 @@
   --border-color--border-primary: var(--base-color-neutral--neutral-darker);
   --border-color--border-alternate: var(--base-color-neutral--white);
   --border-radius--large: 1rem;
+  --link-color--link-alternate: var(--base-color-neutral--white);
 }
 
 .w-layout-layout {
@@ -139,7 +139,7 @@
 }
 
 .w-checkbox-input--inputType-custom.w--redirected-focus {
-  box-shadow: 0 0 3px 1px transparent;
+  box-shadow: 0 0 3px 1px #3898ec;
 }
 
 .w-form-formradioinput--inputType-custom {
@@ -150,12 +150,12 @@
 }
 
 .w-form-formradioinput--inputType-custom.w--redirected-focus {
-  box-shadow: 0 0 3px 1px transparent;
+  box-shadow: 0 0 3px 1px #3898ec;
 }
 
 .w-form-formradioinput--inputType-custom.w--redirected-checked {
   border-width: 4px;
-  border-color: transparent;
+  border-color: #3898ec;
 }
 
 body {
@@ -1519,6 +1519,7 @@ figcaption {
 
 .mini-cart_component {
   background-color: var(--base-color-neutral--white);
+  box-shadow: -1px 0 0 0 var(--border-color--border-secondary);
   flex-direction: column;
   align-items: stretch;
   width: 28rem;
@@ -1631,7 +1632,7 @@ figcaption {
   flex: 1;
   justify-content: center;
   align-items: center;
-  max-height: 100vh;
+  height: 100%;
   display: flex;
 }
 
@@ -1889,7 +1890,7 @@ figcaption {
 }
 
 .icon-embed-xsmall.color-secondary {
-  color: var(--link-color--link-secondary) !important;
+  color: var(--link-color--link-secondary);
 }
 
 .nav_shop-quantity {
@@ -2448,8 +2449,11 @@ figcaption {
 .product-item_price {
   grid-column-gap: .25rem;
   grid-row-gap: .25rem;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
   align-items: center;
-  display: flex;
+  display: inline-flex;
 }
 
 .product_list-item {
@@ -3993,11 +3997,10 @@ figcaption {
 }
 
 .navbar6_menu-left {
-  color: var(--link-color--link-alternate);
+  color: inherit;
 }
 
 .navbar6_link {
-  color: var(--link-color--link-secondary);
   letter-spacing: .08rem;
   text-transform: uppercase;
   padding: 1rem;
@@ -4008,6 +4011,8 @@ figcaption {
 .navbar6_link:hover {
   text-underline-offset: .25rem;
   text-decoration: underline;
+  -webkit-text-decoration-color: inherit;
+  text-decoration-color: inherit;
 }
 
 .navbar6_link.w--current {
@@ -4015,7 +4020,7 @@ figcaption {
 }
 
 .navbar6_link.is-alternate {
-  color: var(--link-color--link-primary);
+  color: inherit;
 }
 
 .nav-button {
@@ -4038,13 +4043,15 @@ figcaption {
 .nav-button.is-link {
   outline-color: var(--background-color--background-alternate);
   outline-offset: 0px;
-  color: var(--link-color--link-primary);
+  text-decoration: none;
+  -webkit-text-decoration-color: inherit;
+  text-decoration-color: inherit;
+  color: inherit;
   background-color: #0000;
   outline-width: 1px;
   outline-style: none;
   padding: .25rem 0;
   line-height: 1;
-  text-decoration: none;
 }
 
 .nav-button.is-link.is-alternate {
@@ -4093,7 +4100,6 @@ figcaption {
 }
 
 .navbar6_menu-right {
-  color: var(--text-color--text-primary);
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -4243,10 +4249,10 @@ figcaption {
 }
 
 .product-item-main-info {
-  grid-column-gap: .25rem;
-  grid-row-gap: .25rem;
-  flex-flow: wrap;
+  white-space: pre-line;
+  flex-flow: row;
   padding: 0;
+  display: block;
 }
 
 .product-item-name {
@@ -4791,6 +4797,10 @@ figcaption {
   left: 0;
 }
 
+.navbar6_component.theme-dark {
+  color: inherit;
+}
+
 .skip-link2 {
   z-index: 999;
   background-color: var(--background-color--background-primary);
@@ -4911,6 +4921,14 @@ figcaption {
   margin-left: .25rem;
   margin-right: .25rem;
   display: inline-block;
+}
+
+.theme-light {
+  color: var(--link-color--link-secondary);
+}
+
+.theme-dark {
+  color: var(--link-color--link-primary);
 }
 
 @media screen and (max-width: 991px) {
@@ -6938,7 +6956,6 @@ figcaption {
   }
 
   .navbar6_component {
-    box-shadow: 0 1px 0 0 var(--border-color--border-secondary);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     background-color: #0000;
