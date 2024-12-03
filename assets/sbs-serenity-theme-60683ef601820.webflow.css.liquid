@@ -1634,7 +1634,6 @@ figcaption {
   align-items: center;
   height: 100%;
   display: flex;
-  color: var(--text-color--text-primary);
 }
 
 .mini-cart_line-item_quantity {
@@ -4788,6 +4787,7 @@ figcaption {
 
 .navbar6_component {
   z-index: 100;
+  color: inherit;
   background-color: #0000;
   align-items: center;
   width: 100%;
@@ -5007,8 +5007,8 @@ figcaption {
   }
 
   .padding-section-large {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .padding-section-large.margin-top.margin-xhuge {
@@ -5606,7 +5606,7 @@ figcaption {
   }
 
   .navbar1_container.align-right {
-    color: #f4f4f4;
+    color: inherit;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -5667,7 +5667,7 @@ figcaption {
   }
 
   .logo_monogram.is-secondary {
-    color: var(--link-color--link-primary);
+    color: inherit;
   }
 
   .nav_button {
@@ -5675,7 +5675,11 @@ figcaption {
     width: 2rem;
   }
 
-  .nav_button.is-secondary, .hamburger_11_wrap.is-secondary {
+  .nav_button.is-secondary {
+    color: inherit;
+  }
+
+  .hamburger_11_wrap.is-secondary {
     color: var(--link-color--link-primary);
   }
 
@@ -5879,8 +5883,8 @@ figcaption {
   }
 
   .padding-section-large {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .text-size-large {
@@ -6825,10 +6829,6 @@ figcaption {
     color: #f7f7f7;
   }
 
-  .nav_button.is-secondary.w--open {
-    color: var(--link-color--link-primary);
-  }
-
   .section_page_hero.text-color-alternate {
     max-height: 32rem;
   }
@@ -6954,12 +6954,6 @@ figcaption {
 
   .text-size-regular-2.text-align-left:active {
     background-color: #f4f4f4;
-  }
-
-  .navbar6_component {
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    background-color: #0000;
   }
 
   .home_shop_grid {
