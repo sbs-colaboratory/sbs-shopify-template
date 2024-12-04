@@ -18,7 +18,7 @@
     "staff_picks": {
       "type": "staff_picks",
       "settings": {
-        "text_headline": "StafF Picks",
+        "text_headline": "{{ section.settings.collection_collection.title }}",
         "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
         "collection_collection": "staff-picks",
         "collection_collection_limit": 6
@@ -31,8 +31,8 @@
     "kerstin_florian": {
       "type": "kerstin_florian",
       "settings": {
-        "text_headline": "Kerstin Florian",
-        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "text_headline": "{{ section.settings.collection_collection.title }}",
+        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
         "collection_collection": "kerstin-florian",
         "collection_collection_limit": 14
       }
@@ -40,8 +40,8 @@
     "rescuemd": {
       "type": "rescuemd",
       "settings": {
-        "text_headline": "Rescuemd",
-        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "text_headline": "{{ section.settings.collection_collection.title }}",
+        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
         "collection_collection": "rescuemd",
         "collection_collection_limit": 6
       }
@@ -49,8 +49,8 @@
     "colorescience": {
       "type": "colorescience",
       "settings": {
-        "text_headline": "Colorescience",
-        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "text_headline": "{{ section.settings.collection_collection.title }}",
+        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
         "collection_collection": "colorescience",
         "collection_collection_limit": 14
       }
@@ -58,8 +58,8 @@
     "elizabethw": {
       "type": "elizabethw",
       "settings": {
-        "text_headline": "ElizabethW",
-        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "text_headline": "{{ section.settings.collection_collection.title }}",
+        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
         "collection_collection": "elizabethw",
         "collection_collection_limit": 14
       }
