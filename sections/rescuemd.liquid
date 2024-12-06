@@ -5,7 +5,7 @@
 </div></div></div>{% for product in section.settings.collection_collection.products limit: section.settings.collection_collection_limit %}
 <div id="w-node-_73299723-c0f8-6168-ca75-7ecf374c5f92-6bd3e787" class="w-layout-cell product_list-item">
     
-    <div class="product-item_component"><div class="product-item_image-link is-contained"><a li-object:href="product.url" href="{{ product.url }}" class="product-item_image-wrapper is_wide w-inline-block"><img li-object:src="product.featured_image | img_url: 'master'" li-object:alt="product.featured_image.alt" alt="{{ product.featured_image.alt }}" src="{{ product.featured_image | img_url: 'master' }}" loading="lazy" class="product-item_image">
+    <div class="product-item_component"><div class="product-item_image-link"><a li-object:href="product.url" href="{{ product.url }}" class="product-item_image-wrapper is_wide w-inline-block"><img li-object:src="product.featured_image | img_url: 'master'" li-object:alt="product.featured_image.alt" alt="{{ product.featured_image.alt }}" src="{{ product.featured_image | img_url: 'master' }}" loading="lazy" class="product-item_image is-contained">
 <div class="product-item_tag_list">{% if product.selected_or_first_available_variant.available != true %}    <div li-if="product.selected_or_first_available_variant.available != true" class="product-item_tag">
     Not in Stock    </div>
 {% endif %}{% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price" class="product-item_tag is-red">
