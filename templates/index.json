@@ -1,0 +1,74 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "text_headline": "Skin Bar Shop"
+      }
+    },
+    "staff_picks": {
+      "type": "staff_picks",
+      "settings": {
+        "text_headline": "StafF Picks",
+        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "collection_collection": "staff-picks",
+        "collection_collection_limit": 6
+      }
+    },
+    "kerstin_florian": {
+      "type": "kerstin_florian",
+      "settings": {
+        "text_headline": "Kerstin Florian",
+        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "collection_collection": "kerstin-florian",
+        "collection_collection_limit": 6
+      }
+    },
+    "rescuemd": {
+      "type": "rescuemd",
+      "settings": {
+        "text_headline": "Rescuemd",
+        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "collection_collection": "",
+        "collection_collection_limit": 6
+      }
+    },
+    "colorescience": {
+      "type": "colorescience",
+      "settings": {
+        "text_headline": "Colorescience",
+        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "collection_collection": "",
+        "collection_collection_limit": 6
+      }
+    },
+    "elizabethw": {
+      "type": "elizabethw",
+      "settings": {
+        "text_headline": "ElizabethW",
+        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br/></p>",
+        "collection_collection": "",
+        "collection_collection_limit": 6
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "hero",
+    "staff_picks",
+    "kerstin_florian",
+    "rescuemd",
+    "colorescience",
+    "elizabethw"
+  ]
+}
