@@ -1,0 +1,47 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "text_headline": "Skin Bar Shop",
+        "url_button_link": "shopify://collections/colorescience",
+        "text_button_text": "Staff Picks",
+        "image_bild": "shopify://shop_images/og-treatments.jpg"
+      }
+    },
+    "category": {
+      "type": "category",
+      "settings": {
+        "text_headline": "{{ section.settings.collection_collection.title }}",
+        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
+        "collection_collection": "kerstin-florian",
+        "collection_collection_limit": 6
+      }
+    },
+    "category_W4ET49": {
+      "type": "category",
+      "settings": {
+        "text_headline": "{{ section.settings.collection_collection.title }}",
+        "richtext_text": "<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.</p>{{ section.settings.collection_collection.description }}",
+        "collection_collection": "elizabethw",
+        "collection_collection_limit": 6
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "hero",
+    "category",
+    "category_W4ET49"
+  ]
+}
