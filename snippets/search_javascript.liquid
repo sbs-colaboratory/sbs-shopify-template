@@ -1,0 +1,93 @@
+<script>// predictive-search
+  class PredictiveSearch extends HTMLElement {
+    constructor() {
+      super();
+      this.input = this.querySelector('input[type="search"]');
+      this.predictiveSearchResults = this.querySelector('#predictive-search');
+      this.input.addEventListener('input', this.debounce((event) => {
+        this.onChange(event);
+      }, 300).bind(this));
+    }
+    onChange() {
+      const searchTerm = this.input.value.trim();
+      if (!searchTerm.length) {
+        this.close();
+        return;
+      }
+      this.getSearchResults(searchTerm);
+    }
+    getSearchResults(searchTerm) {
+      fetch(`{% unless request.locale.root_url == '/' %}{{ request.locale.root_url }}{% endunless %}/search/suggest?q=${searchTerm}&amp;section_id=predictive_search`)
+        .then((response) => {
+        if (!response.ok) {
+          var error = new Error(response.status);
+          this.close();
+          throw error;
+        }
+        return response.text();
+      })
+        .then((text) => {
+        const resultsMarkup = new DOMParser().parseFromString(text, 'text/html').querySelector('#shopify-section-predictive_search').innerHTML;
+        this.predictiveSearchResults.innerHTML = resultsMarkup;
+        this.open();
+      })
+        .catch((error) => {
+        this.close();
+        throw error;
+      });
+    }
+    open() {
+      this.predictiveSearchResults.style.display = 'block';
+    }
+    close() {
+      this.predictiveSearchResults.style.display = 'none';
+    }
+    debounce(fn, wait) {
+      let t;
+      return (...args) => {
+        clearTimeout(t);
+        t = setTimeout(() => fn.apply(this, args), wait);
+      };
+    }
+  }
+  customElements.define('predictive-search', PredictiveSearch);
+/* Skip-to-main script */
+  $(document).ready(function () {
+    $('#skip-link2').on('click keydown', function(e) {
+      if (e.type === "keydown" && e.which !== 13) {
+          return;
+      }
+      e.preventDefault();
+      var target = $('#main');
+      target.attr('tabindex', '-1');
+      target.focus();
+    });
+  });
+</script>
+<!-- Lead magnet pop-up script -->
+<script>
+  (function(w, d, t, h, s, n) {
+    w.FlodeskObject = n;
+    var fn = function() {
+      (w[n].q = w[n].q || []).push(arguments);
+    };
+    w[n] = w[n] || fn;
+    var f = d.getElementsByTagName(t)[0];
+    var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+    var sm = d.createElement(t);
+    sm.async = true;
+    sm.type = 'module';
+    sm.src = h + s + '.mjs' + v;
+    f.parentNode.insertBefore(sm, f);
+    var sn = d.createElement(t);
+    sn.async = true;
+    sn.noModule = true;
+    sn.src = h + s + '.js' + v;
+    f.parentNode.insertBefore(sn, f);
+  })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+</script>
+<script>
+  window.fd('form', {
+    formId: '674e26cb431f8fb2d43f7e45'
+  });
+</script>
