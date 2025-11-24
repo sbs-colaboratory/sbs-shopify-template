@@ -66,6 +66,16 @@
     },
     "elizabethw_B4aUyB": {
       "type": "elizabethw",
+      "name": "ISClinical",
+      "settings": {
+        "text_headline": "{{ section.settings.collection_collection.title }}",
+        "richtext_text": "{{ section.settings.collection_collection.description }}",
+        "collection_collection": "isclinical",
+        "collection_collection_limit": 14
+      }
+    },
+    "elizabethw_eyPdmU": {
+      "type": "elizabethw",
       "name": "Skinbetter Science",
       "settings": {
         "text_headline": "{{ section.settings.collection_collection.title }}",
@@ -85,6 +95,7 @@
     "rescuemd",
     "colorescience",
     "elizabethw",
-    "elizabethw_B4aUyB"
+    "elizabethw_B4aUyB",
+    "elizabethw_eyPdmU"
   ]
 }
