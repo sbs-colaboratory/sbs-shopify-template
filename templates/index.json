@@ -59,8 +59,18 @@
       "type": "elizabethw",
       "settings": {
         "text_headline": "{{ section.settings.collection_collection.title }}",
-        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
+        "richtext_text": "{{ section.settings.collection_collection.description }}",
         "collection_collection": "elizabethw",
+        "collection_collection_limit": 14
+      }
+    },
+    "elizabethw_B4aUyB": {
+      "type": "elizabethw",
+      "name": "Skinbetter Science",
+      "settings": {
+        "text_headline": "{{ section.settings.collection_collection.title }}",
+        "richtext_text": "{{ section.settings.collection_collection.description }}",
+        "collection_collection": "skinbetter-science",
         "collection_collection_limit": 14
       }
     }
@@ -74,6 +84,7 @@
     "kerstin_florian",
     "rescuemd",
     "colorescience",
-    "elizabethw"
+    "elizabethw",
+    "elizabethw_B4aUyB"
   ]
 }
