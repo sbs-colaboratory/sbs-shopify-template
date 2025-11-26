@@ -15,11 +15,19 @@
         "text_headline": "Skin Bar Shop"
       }
     },
+    "text_cta_XFr6b9": {
+      "type": "text_cta",
+      "name": "Text-CTA",
+      "settings": {
+        "text_headline": "25% off all products",
+        "text_text": "11/28 to 12/1 in Cart"
+      }
+    },
     "staff_picks": {
       "type": "staff_picks",
       "settings": {
         "text_headline": "{{ section.settings.collection_collection.title }}",
-        "richtext_text": "<p>{{ section.settings.collection_collection.description }}</p>",
+        "richtext_text": "{{ section.settings.collection_collection.description }}",
         "collection_collection": "staff-picks",
         "collection_collection_limit": 6
       }
@@ -89,6 +97,7 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "hero",
+    "text_cta_XFr6b9",
     "staff_picks",
     "new_clients",
     "kerstin_florian",
