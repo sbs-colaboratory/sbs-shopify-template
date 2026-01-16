@@ -1,0 +1,13 @@
+<div id="elizabethw" class="padding-global padding-section-medium"><div class="container-large"><div id="w-node-dead72dc-5243-2583-d148-aad73c924e71-6bd3e787" class="w-layout-layout shop_products_grid padding-horizontal padding-large wf-layout-layout"><div id="w-node-dead72dc-5243-2583-d148-aad73c924e72-6bd3e787" class="w-layout-cell"><div class="shop_heading_wrapper is-wide"><div class="shop_heading"><div class="max-width-large"><div class="margin-bottom margin-small"><h2 class="heading-style-h2">
+{{ section.settings.text_headline }}
+</h2>
+</div></div><div class="text-size-regular-2"> {{ section.settings.richtext_text }} </div>
+</div></div></div>{% for product in section.settings.collection_collection.products limit: section.settings.collection_collection_limit %}
+<div id="w-node-dead72dc-5243-2583-d148-aad73c924e7c-6bd3e787" class="w-layout-cell product_list-item">
+    
+    {% render 'product_item', product: product %}
+
+    
+</div>
+{% endfor %}
+<div id="w-node-dead72dc-5243-2583-d148-aad73c924e7e-6bd3e787" class="w-layout-cell product_list-item"></div><div id="w-node-dead72dc-5243-2583-d148-aad73c924e7f-6bd3e787" class="w-layout-cell product_list-item"></div><div id="w-node-dead72dc-5243-2583-d148-aad73c924e80-6bd3e787" class="w-layout-cell product_list-item"></div><div id="w-node-dead72dc-5243-2583-d148-aad73c924e81-6bd3e787" class="w-layout-cell product_list-item"></div><div id="w-node-dead72dc-5243-2583-d148-aad73c924e82-6bd3e787" class="w-layout-cell product_list-tem"></div><div id="w-node-_3316edaf-b2d5-52ed-3eda-6a814fbf024a-6bd3e787" class="w-layout-cell"></div><div id="w-node-a7647afa-54fc-b137-0e6a-66dbe41bb1c7-6bd3e787" class="w-layout-cell"></div><div id="w-node-fee14d77-3c21-0d0a-27bd-4f78278f5bf3-6bd3e787" class="w-layout-cell"></div><div id="w-node-f2c60b37-d7a2-58cd-265a-478406140ae1-6bd3e787" class="w-layout-cell"></div></div></div></div> {% schema %} {"tag":"section","name":"ElizabethW","class":"section_product border-bottom","settings":[{"id":"text_headline","type":"text","label":"Headline","default":"ElizabethW"},{"id":"richtext_text","type":"richtext","label":"Text","default":"<p>Shop our curated selection of skin care products to bring the Skin Bar and Studio experience home.<br\/><\/p>"},{"id":"collection_collection","type":"collection","label":"Collection"},{"type":"range","id":"collection_collection_limit","min":1,"max":99,"step":1,"label":"Limit: Collection","default":6}],"presets":[{"name":"ElizabethW","category":"Liquify"}]} {% endschema %}
